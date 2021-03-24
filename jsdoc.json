@@ -1,0 +1,19 @@
+{
+    "plugins": ["jsdoc-http-plugin"],
+    "source":{
+        "include": ["src", "src/libs" ],
+        "includePattern":".+\\.js(doc|x)?$",
+        "excludePattern": "(node_modules|docs)"
+    },
+    "template": {
+        "claverLinks": false,
+        "monospaceLiniks":false 
+    },
+    "opts": {
+        "resurce": true, 
+        "destination": "./doc",
+        "template": "node_modules/docdash",
+        "tutorials": "./tutorials",
+        "readme": "./README.md"
+    }
+}
